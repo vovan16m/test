@@ -1,0 +1,47 @@
+#search{
+    background: #af451f;
+    padding: 20px 0 44px;
+    h3{
+        text-align: center;
+    }
+    .search-field{
+        height: 41px;
+        background: #FFFFFF;
+        border: 1px solid #954019;
+    }
+    ::placeholder {
+        font-family: "Noto Sans";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 26px;   
+        color: #888888; 
+    }
+    .search-submit{
+        background: #E3D6C3;
+        border: 1px solid #D4C9B8;
+        box-sizing: border-box;
+        height: 44px;
+        right: 0px;
+        top: -1px;
+        min-width: 170px;
+        svg{
+            fill: #BB4A1B;
+            margin-right: 8px;
+            width: 20px;
+            height: 20px;
+        }
+        .screen-reader-text{
+            position: relative!important;
+            font-family: "Noto Sans"; 
+            font-size: 14px;
+            line-height: 19px; 
+            letter-spacing: 0.7px;
+            text-transform: uppercase; 
+            color: #BB4A1B; 
+        }
+    }
+    @media only screen and (max-width: 1025px) {
+        padding: 20px 10px 44px;
+    }
+}

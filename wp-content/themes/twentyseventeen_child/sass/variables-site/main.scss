@@ -1,0 +1,269 @@
+/*main colors*/
+$color__background_main: #eae1d2;
+$color__background_main_second: #af451f;
+
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+h3{
+    font-family: "Merriweather Sans Bold"; 
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+h4{
+    font-family: "Merriweather Sans"; 
+    font-size: 18px;
+    line-height: 32px; 
+    letter-spacing: 0.45px;
+    text-transform: uppercase; 
+    color: #555555;
+}
+h5{
+    font-family: "Merriweather Sans"; 
+    font-size: 14px;
+    line-height: 32px; 
+    letter-spacing: 0.45px;
+    text-transform: uppercase; 
+    color: #666666;
+}
+.wrapper{
+    display: block;
+    width: 960px;
+    margin: 0 auto;
+    @media only screen and (max-width: 1025px) {
+        &{
+            max-width: 100%;
+        }
+    }
+}
+.top-header{
+    background: $color__background_main; 
+    
+    .wrapper{
+        padding: 13px 10px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    ul {
+        li {
+            display: inline-block;
+            margin-left: 20px;
+            a{
+                img{
+                    margin-right: 5px;
+                }
+                font-family: "Noto Sans";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 26px; 
+                display: flex;
+                align-items: center; 
+                color: #000000;
+            } 
+        }
+    }
+}
+.main-header{
+    background: $color__background_main_second;
+    .site-title a{
+        font-family: "Merriweather Sans Bold"; 
+        font-size: 36px;
+        line-height: 45px;  
+        color: #65270C;
+    }
+    .wrapper{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 10px;
+    }
+    
+    .wrap{
+        padding: 0;
+        margin: 0;
+        li a{
+            font-family: "Merriweather Sans"; 
+            font-size: 14px;
+            line-height: 18px;  
+            text-transform: uppercase; 
+            color: #FFFFFF;
+
+        }
+        li:last-child a{
+            padding-right: 0;
+        }
+        .sub-menu li a{
+            color: #65270C;
+        }
+    }
+    
+}
+footer.site-footer{
+    margin-top: 0;
+    border: 0;
+    background: url(img/footer.jpg);
+}
+.social-icons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 13px;
+    a{
+        margin: 0 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        background: #BDBCBC;
+        width: 23px;
+        height: 23px;
+        padding: 5px;
+        &:hover{
+            svg{
+                fill: #949394;
+            }
+        }
+    }
+    svg{
+        max-width: 23px;
+        max-height: 23px;
+        fill: #393d3f;
+    }
+}
+h2.widget-title{
+    font-family: "Merriweather Sans"; 
+    font-size: 14px;
+    line-height: 32px; 
+    letter-spacing: 0.35px; 
+    color: #E1E1E1;
+    margin-bottom: 22px;
+}
+.widget ul li, .widget ol li{
+    border: 0;
+    .sub-menu{
+        display: none;
+    }
+    a{
+        font-family: "Noto Sans"; 
+        font-size: 14px;
+        line-height: 26px;  
+        color: #BDBCBC;
+        text-decoration: none!important;
+        box-shadow: none!important;
+    }
+}
+.footer_bottom{
+    min-height: 68px;
+    width: 100%;
+    background: #2E2D2D;
+    display: flex;
+    align-items: center;
+    .site-info{
+        padding: 0;
+        margin: 0;
+        a{
+            text-decoration: none;
+            box-shadow: none;
+        }
+    }
+}
+.widget-column {
+    width: 100%!important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    section{
+        width: 33%;
+    }
+}
+.footer_contacts {
+    ul{
+        list-style-type: none;
+        margin: 0;
+        width: 100%;
+    }
+    a{
+        display: flex;
+        align-items: center;
+    }
+    i{
+        display: inline-block;
+        margin-right: 15px;
+    }
+}
+.footer-phone i{
+    background: url(img/footer-phone.png);
+    width: 9px;
+    height: 15px; 
+}
+.footer-mail i{
+    background: url(img/footer-mail.png);
+    width: 16px;
+    height: 11px; 
+}
+.footer-address i{
+    background: url(img/footer-address.png);
+    width: 11px;
+    height: 16px;   
+}
+.widget_text{
+    input[type=text],
+    input[type=email],
+    input[type=tel],
+    textarea    {
+        border: 1px solid #4d5254;
+        height: 30px;
+        border-radius: 0;
+    }
+    textarea {
+        height: 63px;
+        
+    }
+    ::placeholder {
+        font-family: "Noto Sans"; 
+        font-size: 12px;
+        line-height: 16px; 
+        color: #B2B2B2;
+    }
+    input[type=submit]{ 
+        border-radius: 4px;
+        display: inline-block;
+        background: #A14016;
+        padding: 10px;
+        font-family: "Noto Sans";
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 0.7px;
+        color: #FDFEFE;
+    }
+}
+@media only screen and (max-width: 1025px) {
+    #masthead .wrap{
+        width: 100%;
+        max-width: 100%;
+    }
+    .main-header .wrapper{
+        padding-right: 0;
+    }
+    .main-header .wrap li a{
+        color: #65270C;
+    }
+    .site-footer .widget-area{
+        padding: 20px 10px;
+    }
+
+}
+@media only screen and (max-width: 768px) {
+    .widget-column section{
+        width: 100%;
+    }
+}

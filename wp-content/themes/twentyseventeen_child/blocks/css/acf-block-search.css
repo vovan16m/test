@@ -1,0 +1,92 @@
+#search {
+  background: #af451f;
+  padding: 20px 0 44px;
+}
+
+#search h3 {
+  text-align: center;
+}
+
+#search .search-field {
+  height: 41px;
+  background: #FFFFFF;
+  border: 1px solid #954019;
+}
+
+#search ::-webkit-input-placeholder {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  color: #888888;
+}
+
+#search ::-moz-placeholder {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  color: #888888;
+}
+
+#search :-ms-input-placeholder {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  color: #888888;
+}
+
+#search ::-ms-input-placeholder {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  color: #888888;
+}
+
+#search ::placeholder {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  color: #888888;
+}
+
+#search .search-submit {
+  background: #E3D6C3;
+  border: 1px solid #D4C9B8;
+  box-sizing: border-box;
+  height: 44px;
+  right: 0px;
+  top: -1px;
+  min-width: 170px;
+}
+
+#search .search-submit svg {
+  fill: #BB4A1B;
+  margin-right: 8px;
+  width: 20px;
+  height: 20px;
+}
+
+#search .search-submit .screen-reader-text {
+  position: relative !important;
+  font-family: "Noto Sans";
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  color: #BB4A1B;
+}
+
+@media only screen and (max-width: 1025px) {
+  #search {
+    padding: 20px 10px 44px;
+  }
+}

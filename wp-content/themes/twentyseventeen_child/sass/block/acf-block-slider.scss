@@ -1,0 +1,43 @@
+#slider{
+    .wrapper{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0; 
+        display: flex; 
+        align-items: center;
+    } 
+    img{
+        max-height: 523px;
+        min-height: 523px;
+        object-fit: cover;
+    }
+    h3{
+        font-family: "Merriweather Sans Bold"; 
+        font-size: 36px;
+        line-height: 45px; 
+        color: #FFFEFE; 
+    }
+    p{
+        font-family: "Merriweather Sans"; 
+        font-size: 24px;
+        line-height: 36px;  
+        text-transform: uppercase; 
+        color: #FFFFFF;
+        margin-bottom: 0;
+    }
+    .text-box{
+        background: linear-gradient(0deg, rgba(76, 52, 66, 0.5), rgba(76, 52, 66, 0.5)), rgba(255, 255, 255, 0.0001);
+        mix-blend-mode: normal;
+        opacity: 0.6;
+        border: 1px solid #4E3644;
+        padding: 65px 27px 75px; 
+        max-width: 665px;
+    }
+    @media only screen and (max-width: 1025px) {
+        &{
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,102 @@
+/**
+ * Theme Name: Twenty Seventeen Child
+ * Description: Twenty Seventeen Child Theme
+ * Template: twentyseventeen
+ * Version: 1.0.0
+ */
+ 
+/* ----------------------------------------------------------------------------
+ * Child Theme Style.css styles begin here!
+ * ------------------------------------------------------------------------- */
+ .owl-carousel{
+     position: relative;
+ }
+.owl-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 11px;
+    width: 100%;
+    button.owl-dot{
+        width: 43px;
+        height: 13px;
+        background: #FFFFFF;
+        mix-blend-mode: normal;
+        opacity: 0.6;
+        border: 1px solid rgba(160, 159, 159, 0.6);
+        box-sizing: border-box;
+        border-radius: 0;
+        margin: 0 3px;
+        &.active{
+            background: linear-gradient(0deg, #AC4418, #AC4418), rgba(255, 255, 255, 0.0001);
+            mix-blend-mode: normal;
+            opacity: 0.6;
+        }
+    }
+}
+.owl-nav {
+    max-width: 960px;
+}
+.owl-nav   {
+    max-width: 1130px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: absolute;
+    top: 48%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    bottom: 0;
+    height: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.owl-nav .owl-next {
+    right: 0;
+    display: flex;
+    margin-right: 2%;
+    font-size: 25px !important;
+    span{
+        background: url(img/arrow.svg);     
+        background-size: 100% 100%;   
+        color: transparent;
+        width: 26px;
+        height: 24px;
+    }
+    
+}
+.owl-nav .owl-prev{
+    left: 0;
+    display: flex;
+    margin-left: 2%;
+    font-size: 25px !important;
+    span{
+        transform: rotate(-180deg);
+        background: url(img/arrow.svg);
+        background-size: 100% 100%;   
+        color: transparent;
+        width: 26px;
+        height: 24px;
+    }
+}
+.owl-carousel{
+    .owl-nav button.owl-next,
+    .owl-nav button.owl-prev{
+        width: 46px;
+        height: 46px; 
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(0deg, #f7f6f638, #f7f6f638), rgba(118, 116, 117, 0.0001);
+        mix-blend-mode: normal;
+        border: 1px solid rgba(216, 216, 216, 0.1);
+        box-sizing: border-box;
+        &:hover{
+            background: #767475; 
+            border: 1px solid #626646;
+        }
+    }
+}

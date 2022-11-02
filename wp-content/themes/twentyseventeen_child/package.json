@@ -5,7 +5,7 @@
   "main": "gulpfile.js",
   "dependencies": {
     "browser-sync": "^2.26.7",
-    "fontmin": "^0.9.8",
+    "fontmin": "^0.9.9",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^3.0.1",
